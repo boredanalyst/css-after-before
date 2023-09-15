@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <Title>Pseudoelements</Title>
+        <style>
+            h1 {
+                font-size:10vh;
+                margin-bottom:0;
+            }
+
+            body {
+                display:flex;
+            }
+
+            main {
+                margin:auto;
+                width:50%;
+            }
+            
+            hr {
+                margin-top:5vh;
+            }
+
+            ol {
+                list-style:none;
+            }
+
+            li {
+                padding:1vh;
+            }
+
+            li::after {
+                content: "\2661";
+                color:white;
+                margin-left:1vh;
+                font-weight:bold;
+                font-size:2vh;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Pseudoelements</h1>
+            <p>Pseudoelements allow you to add <q>temporary</q> elements</p>
+            <hr align="center" width="50%">
+
+            <section>
+                <p>You can add icons as well with after.</p>
+                <ol>
+                    <li>I am a list item.</li>
+                    <li>I am another list item.</li>
+                    <li>I am the last item.</li>
+                </ol>
+            </section>
+
+        </main>
+    </body>
+</html>
