@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <Title>Pseudoelements</Title>
+        <style>
+            h1 {
+                font-size:10vh;
+                margin-bottom:0;
+            }
+
+            body {
+                display:flex;
+            }
+
+            main {
+                margin:auto;
+                width:50%;
+            }
+            
+            hr {
+                margin-top:5vh;
+            }
+
+            ol {
+                list-style:none;
+            }
+
+            section p:before {
+                content:"TIP";
+                font-weight:bold;
+                margin-right:1vh;
+                color:green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Pseudoelements</h1>
+            <p>Pseudoelements allow you to add <q>temporary</q> elements</p>
+            <hr align="center" width="50%">
+            <p>You can also use <code>::before</code> to attach content before another content.</p>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sapiente provident modi voluptate repellat qui expedita, ad, velit totam at ducimus eos distinctio, maxime quaerat magnam ratione. Quis, dolorum iusto.</p>
+            </section>
+
+        </main>
+    </body>
+</html>
