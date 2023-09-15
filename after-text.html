@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <Title>Pseudoelements</Title>
+        <style>
+            h1 {
+                font-size:10vh;
+                margin-bottom:0;
+            }
+
+            body {
+                display:flex;
+            }
+
+            main {
+                margin:auto;
+                width:50%;
+            }
+            
+            hr {
+                margin-top:5vh;
+            }
+
+            ol {
+                list-style:none;
+            }
+
+            li {
+                padding:1vh;
+            }
+
+            li::after {
+                content:"I am an extension text!";
+                background-color:salmon;
+                color:white;
+                margin-left:1vh;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Pseudoelements</h1>
+            <p>Pseudoelements allow you to add <q>temporary</q> elements</p>
+            <hr align="center" width="50%">
+
+            <section>
+                <p>You can add new text after an element using the ::after element.</p>
+                <ol>
+                    <li>I am a list item.</li>
+                    <li>I am another list item.</li>
+                    <li>I am the last item.</li>
+                </ol>
+            </section>
+
+        </main>
+    </body>
+</html>
